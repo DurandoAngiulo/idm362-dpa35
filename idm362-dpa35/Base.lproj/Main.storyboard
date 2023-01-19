@@ -17,17 +17,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOI-aY-QmP">
-                                <rect key="frame" x="126" y="409" width="140" height="34"/>
+                                <rect key="frame" x="126.66666666666669" y="76" width="140" height="34"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjF-lu-Q3K">
+                                <rect key="frame" x="40" y="130" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="98S-kY-wcz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyF-fc-snS">
+                                <rect key="frame" x="253" y="130" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="hXD-GU-VDg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="right"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IWJ-ho-KuG">
+                                <rect key="frame" x="18" y="200" width="357" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ker-jv-NFA"/>
+                                </constraints>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DOI-aY-QmP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ETr-w3-8Yt"/>
-                            <constraint firstItem="DOI-aY-QmP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sam-Ar-4JX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IWJ-ho-KuG" secondAttribute="trailing" constant="20" id="8fj-wy-c8e"/>
+                            <constraint firstItem="DOI-aY-QmP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="EUQ-7n-DFm"/>
+                            <constraint firstItem="IWJ-ho-KuG" firstAttribute="top" secondItem="tjF-lu-Q3K" secondAttribute="bottom" constant="35" id="LNn-vi-ubK"/>
+                            <constraint firstItem="iyF-fc-snS" firstAttribute="top" secondItem="DOI-aY-QmP" secondAttribute="bottom" constant="20" id="RYS-JE-mR8"/>
+                            <constraint firstItem="DOI-aY-QmP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TVK-xj-FSo"/>
+                            <constraint firstItem="tjF-lu-Q3K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VEW-md-0ch"/>
+                            <constraint firstItem="iyF-fc-snS" firstAttribute="leading" secondItem="tjF-lu-Q3K" secondAttribute="trailing" constant="113" id="VXG-K8-dki"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iyF-fc-snS" secondAttribute="trailing" id="hnz-cm-CdR"/>
+                            <constraint firstItem="IWJ-ho-KuG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u1G-jG-Kc8"/>
+                            <constraint firstItem="tjF-lu-Q3K" firstAttribute="top" secondItem="DOI-aY-QmP" secondAttribute="bottom" constant="20" id="vwH-Jb-Ud5"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +69,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
