@@ -115,6 +115,27 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXO-V5-x0f">
+                                <rect key="frame" x="16" y="705" width="135" height="35"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset Defaults">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqX-6C-ms3">
+                                <rect key="frame" x="240" y="705" width="140" height="35"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Apply Changes">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="backgroundColor" red="0.82792721933802693" green="0.89438315926816692" blue="0.9392665516246449" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="0.18043334959999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.95294117647058818" blue="0.9882352941176471" alpha="0.94963214251611494" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,9 +145,12 @@
                             <constraint firstItem="IJC-lg-ZZU" firstAttribute="top" secondItem="WW7-3Y-dT3" secondAttribute="bottom" constant="37" id="FPV-Hv-6oy"/>
                             <constraint firstItem="DOI-aY-QmP" firstAttribute="leading" secondItem="WW7-3Y-dT3" secondAttribute="trailing" constant="93" id="JEr-ha-TBE"/>
                             <constraint firstItem="DOI-aY-QmP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TVK-xj-FSo"/>
+                            <constraint firstItem="aqX-6C-ms3" firstAttribute="leading" secondItem="sXO-V5-x0f" secondAttribute="trailing" constant="89" id="WrX-Ow-Qx6"/>
+                            <constraint firstItem="sXO-V5-x0f" firstAttribute="leading" secondItem="0yW-OX-eIN" secondAttribute="leading" id="X4T-Tc-nha"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0yW-OX-eIN" secondAttribute="bottom" constant="517" id="Xbi-ik-cZe"/>
                             <constraint firstItem="WW7-3Y-dT3" firstAttribute="leading" secondItem="0yW-OX-eIN" secondAttribute="leading" id="nzR-vs-Afo"/>
                             <constraint firstItem="0yW-OX-eIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oKc-rr-iGG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sXO-V5-x0f" secondAttribute="bottom" constant="78" id="pou-kF-ePM"/>
                             <constraint firstItem="WW7-3Y-dT3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t5C-a5-Zhu"/>
                             <constraint firstItem="0yW-OX-eIN" firstAttribute="top" secondItem="IJC-lg-ZZU" secondAttribute="bottom" constant="10" id="zA5-Bz-NnE"/>
                             <constraint firstItem="WW7-3Y-dT3" firstAttribute="centerY" secondItem="DOI-aY-QmP" secondAttribute="centerY" constant="-1" id="zuE-LE-fA3"/>
