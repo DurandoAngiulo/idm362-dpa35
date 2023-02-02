@@ -272,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYC-4O-0Om" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338.16793893129767" y="-39.436619718309863"/>
+            <point key="canvasLocation" x="-404" y="-38"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bsw-Np-5bO">
@@ -286,11 +286,102 @@
                     <connections>
                         <segue destination="Hox-uS-CmD" kind="relationship" relationship="viewControllers" id="nVS-pb-el4"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3tw-e2-rDm"/>
+                        <segue destination="IpJ-3O-KAf" kind="relationship" relationship="viewControllers" id="Bbl-bD-ciZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IID-Eo-iDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-335" y="-963"/>
+        </scene>
+        <!--Home New-->
+        <scene sceneID="oyP-QQ-kUd">
+            <objects>
+                <viewController id="IpJ-3O-KAf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aNV-GB-js2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice" translatesAutoresizingMaskIntoConstraints="NO" id="mfe-6q-adF">
+                                <rect key="frame" x="139" y="140" width="115" height="115"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pocket Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1P-cX-yxP">
+                                <rect key="frame" x="111.66666666666669" y="280" width="170" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="T4O-Cs-TAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="30"/>
+                                <color key="textColor" name="brown"/>
+                                <color key="highlightedColor" name="brown"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life Tracker App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKt-jv-Jts">
+                                <rect key="frame" x="130.66666666666666" y="333" width="131.99999999999997" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="mih-sp-KVk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="18"/>
+                                <color key="textColor" name="brown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-Hi-nEa">
+                                <rect key="frame" x="96.666666666666686" y="563" width="200" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="CPg-hm-Jer"/>
+                                    <constraint firstAttribute="height" constant="51" id="gqa-Yn-sgl"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New Game">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="backgroundColor" name="brightRed"/>
+                                        <color key="strokeColor" white="0.18043334959999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwT-OZ-dLK">
+                                <rect key="frame" x="96.666666666666686" y="622" width="200" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="g1T-b3-VWQ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Settings">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="backgroundColor" name="red brown"/>
+                                        <color key="strokeColor" white="0.18043334959999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cjJ-u1-J70"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="B9e-Hi-nEa" firstAttribute="centerX" secondItem="lKt-jv-Jts" secondAttribute="centerX" id="3sP-Mz-eLa"/>
+                            <constraint firstItem="mfe-6q-adF" firstAttribute="centerX" secondItem="aNV-GB-js2" secondAttribute="centerX" id="KHv-iY-w9k"/>
+                            <constraint firstItem="lKt-jv-Jts" firstAttribute="centerX" secondItem="P1P-cX-yxP" secondAttribute="centerX" id="Roe-te-22Y"/>
+                            <constraint firstItem="iwT-OZ-dLK" firstAttribute="centerX" secondItem="B9e-Hi-nEa" secondAttribute="centerX" id="U7O-Fd-CPX"/>
+                            <constraint firstItem="P1P-cX-yxP" firstAttribute="top" secondItem="mfe-6q-adF" secondAttribute="bottom" constant="25" id="WeU-vn-T3P"/>
+                            <constraint firstItem="lKt-jv-Jts" firstAttribute="top" secondItem="P1P-cX-yxP" secondAttribute="bottom" constant="8" id="fJ3-WM-dxK"/>
+                            <constraint firstItem="cjJ-u1-J70" firstAttribute="bottom" secondItem="iwT-OZ-dLK" secondAttribute="bottom" constant="96" id="gOi-nd-4MO"/>
+                            <constraint firstItem="cjJ-u1-J70" firstAttribute="bottom" secondItem="B9e-Hi-nEa" secondAttribute="bottom" constant="155" id="t1T-7m-aY0"/>
+                            <constraint firstItem="iwT-OZ-dLK" firstAttribute="top" secondItem="B9e-Hi-nEa" secondAttribute="bottom" constant="8" symbolic="YES" id="tCC-ux-Wmc"/>
+                            <constraint firstItem="B9e-Hi-nEa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lKt-jv-Jts" secondAttribute="bottom" constant="30" id="tDe-Ef-Yr3"/>
+                            <constraint firstItem="P1P-cX-yxP" firstAttribute="centerX" secondItem="mfe-6q-adF" secondAttribute="centerX" id="wDW-Eq-YGR"/>
+                            <constraint firstItem="mfe-6q-adF" firstAttribute="top" secondItem="cjJ-u1-J70" secondAttribute="top" constant="81" id="xaR-V0-qL0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home New" image="house.fill" catalog="system" id="Q4v-E3-4yT">
+                        <inset key="landscapeImageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEe-Rt-Nk6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1178" y="-38"/>
         </scene>
     </scenes>
     <resources>
