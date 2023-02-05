@@ -412,8 +412,64 @@
                     <view key="view" contentMode="scaleToFill" id="Lf3-2d-1g5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nlc-df-Oc9">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="421"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnr-Vp-rDw">
+                                        <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="421"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="40">
+                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                            <color key="baseBackgroundColor" name="red brown"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWc-Z8-ila">
+                                        <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="421"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="40">
+                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                            <color key="baseBackgroundColor" name="light orange"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-Tp-qy7">
+                                <rect key="frame" x="0.0" y="431" width="393" height="421"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A73-4H-Vk0">
+                                        <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="421"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="40">
+                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                            <color key="baseBackgroundColor" name="bage"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqt-Rg-Frm">
+                                        <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="421"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="40">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                            <color key="baseBackgroundColor" name="brightRed"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="421" id="USz-W2-oNl"/>
+                                    <constraint firstAttribute="width" constant="393" id="Uva-Zs-gri"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tLx-xR-liD"/>
                         <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="tLx-xR-liD" firstAttribute="bottom" secondItem="Nlc-df-Oc9" secondAttribute="bottom" constant="348" id="6bj-js-5Bs"/>
+                            <constraint firstAttribute="bottom" secondItem="tvQ-Tp-qy7" secondAttribute="bottom" id="RJW-Py-uRg"/>
+                            <constraint firstItem="Nlc-df-Oc9" firstAttribute="centerX" secondItem="Lf3-2d-1g5" secondAttribute="centerX" id="cXI-Vg-WLc"/>
+                            <constraint firstItem="tvQ-Tp-qy7" firstAttribute="leading" secondItem="Nlc-df-Oc9" secondAttribute="leading" id="fYp-jB-PYF"/>
+                            <constraint firstItem="Nlc-df-Oc9" firstAttribute="top" secondItem="Lf3-2d-1g5" secondAttribute="topMargin" constant="-59" id="kKg-fD-Bym"/>
+                            <constraint firstItem="Nlc-df-Oc9" firstAttribute="leading" secondItem="tLx-xR-liD" secondAttribute="leading" id="r6X-3B-fzs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="main" image="dice.fill" catalog="system" id="Tck-IG-AYT">
                         <inset key="landscapeImageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -423,7 +479,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0B-SO-84k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="-40"/>
+            <point key="canvasLocation" x="672.51908396946567" y="-40.140845070422536"/>
         </scene>
         <!--player count-->
         <scene sceneID="vhL-rA-CbI">
@@ -546,11 +602,17 @@
         <namedColor name="Background">
             <color red="0.98000001907348633" green="0.96899998188018799" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="bage">
+            <color red="0.89800000190734863" green="0.72200000286102295" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="brightRed">
             <color red="0.83099997043609619" green="0.23899999260902405" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brown">
             <color red="0.23899999260902405" green="0.13300000131130219" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="light orange">
+            <color red="1" green="0.6470000147819519" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="red brown">
             <color red="0.4779999852180481" green="0.27799999713897705" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
