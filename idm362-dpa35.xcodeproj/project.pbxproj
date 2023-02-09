@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1F9CA2299556FB00C2482A /* ViewControllerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F9CA1299556FB00C2482A /* ViewControllerCounter.swift */; };
 		DB9F111D2979987900AD0C97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F111C2979987900AD0C97 /* AppDelegate.swift */; };
 		DB9F111F2979987900AD0C97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F111E2979987900AD0C97 /* SceneDelegate.swift */; };
 		DB9F11212979987900AD0C97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F11202979987900AD0C97 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB1F9CA1299556FB00C2482A /* ViewControllerCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCounter.swift; sourceTree = "<group>"; };
 		DB9F11192979987900AD0C97 /* idm362-dpa35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-dpa35.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9F111C2979987900AD0C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB9F111E2979987900AD0C97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				DB9F111E2979987900AD0C97 /* SceneDelegate.swift */,
 				DB9F11202979987900AD0C97 /* ViewController.swift */,
 				DB9F11222979987900AD0C97 /* Main.storyboard */,
+				DB1F9CA1299556FB00C2482A /* ViewControllerCounter.swift */,
 				DB9F11252979987B00AD0C97 /* Assets.xcassets */,
 				DB9F11272979987B00AD0C97 /* LaunchScreen.storyboard */,
 				DB9F112A2979987B00AD0C97 /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9F11212979987900AD0C97 /* ViewController.swift in Sources */,
+				DB1F9CA2299556FB00C2482A /* ViewControllerCounter.swift in Sources */,
 				DB9F111D2979987900AD0C97 /* AppDelegate.swift in Sources */,
 				DB9F111F2979987900AD0C97 /* SceneDelegate.swift in Sources */,
 			);
