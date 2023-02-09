@@ -200,6 +200,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="brightRed"/>
                     </tabBar>
                     <connections>
                         <segue destination="FHC-BL-XHz" kind="relationship" relationship="viewControllers" id="sEj-7K-kvY"/>
@@ -398,6 +399,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="life Count" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="GWH-xT-GIy">
                         <inset key="landscapeImageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <color key="badgeColor" name="brightRed"/>
                         <imageReference key="selectedImage" image="rectangle.and.pencil.and.ellipsis" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -604,7 +606,7 @@
         <image name="settings" width="118" height="118"/>
         <image name="theme" width="72" height="72"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83137254901960778" green="0.23921568627450979" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background">
             <color red="0.98000001907348633" green="0.96899998188018799" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -613,7 +615,7 @@
             <color red="0.89800000190734863" green="0.72200000286102295" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brightRed">
-            <color red="0.83099997043609619" green="0.23899999260902405" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83137254901960778" green="0.23921568627450979" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brown">
             <color red="0.23899999260902405" green="0.13300000131130219" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
