@@ -9,13 +9,20 @@ import UIKit
 
 class ViewControllerCounter: UIViewController {
 
+    @IBOutlet weak var buttonCounter: UIButton!
+//    var leftCounter:String = buttonCounter.currentTitle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addBtnLeft(_ sender: Any) {
+//        leftCounter += 1;
+//        buttonCounter.setTitle(String(leftCounter), for: .normal)
+    }
+    
     /*
     // MARK: - Navigation
 

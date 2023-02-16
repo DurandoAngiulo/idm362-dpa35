@@ -411,7 +411,7 @@
         <!--main-->
         <scene sceneID="FV7-8u-7ln">
             <objects>
-                <viewController id="ilo-Nu-JEB" sceneMemberID="viewController">
+                <viewController id="ilo-Nu-JEB" customClass="ViewControllerCounter" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lf3-2d-1g5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -429,6 +429,9 @@
                                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
                                                     <color key="baseBackgroundColor" name="bage"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addBtn:" destination="ilo-Nu-JEB" eventType="touchUpInside" id="E4Z-Vh-ejw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqt-Rg-Frm">
                                                 <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="351"/>
@@ -485,10 +488,13 @@
                         <imageReference key="selectedImage" image="dice.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonCounter" destination="A73-4H-Vk0" id="ilM-dA-yeX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0B-SO-84k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="672.51908396946567" y="-40.140845070422536"/>
+            <point key="canvasLocation" x="637" y="-40"/>
         </scene>
         <!--player count-->
         <scene sceneID="vhL-rA-CbI">
@@ -593,6 +599,93 @@
             </objects>
             <point key="canvasLocation" x="-155" y="-40"/>
         </scene>
+        <!--test-->
+        <scene sceneID="tv6-wV-D1r">
+            <objects>
+                <viewController id="Nzr-6x-bLE" customClass="ViewControllerCounter" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="177-D1-sug">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3nE-VN-cW5" userLabel="topdown">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-dU-8Fd" userLabel="leftRightTop">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="351"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T77-tD-P9l">
+                                                <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="351"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="40">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                                    <color key="baseBackgroundColor" name="bage"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addBtn:" destination="Nzr-6x-bLE" eventType="touchUpInside" id="wSV-17-QK3"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhW-3W-Qc7">
+                                                <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="351"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                                <color key="textColor" name="Background"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VhW-3W-Qc7" firstAttribute="width" secondItem="T77-tD-P9l" secondAttribute="width" id="JVC-Hl-7cs"/>
+                                            <constraint firstItem="T77-tD-P9l" firstAttribute="height" secondItem="D5O-dU-8Fd" secondAttribute="height" id="Vqe-Tq-CcN"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6FH-tt-WNs" userLabel="leftRightBottom">
+                                        <rect key="frame" x="0.0" y="359" width="393" height="351"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9R-0w-QI5">
+                                                <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="351"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="40">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                                    <color key="baseBackgroundColor" name="red brown"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6q-0z-GZm">
+                                                <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="351"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="40">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                                    <color key="baseBackgroundColor" name="light orange"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6FH-tt-WNs" firstAttribute="height" secondItem="D5O-dU-8Fd" secondAttribute="height" id="vI8-9O-rd2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="30z-ND-ftm"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="30z-ND-ftm" firstAttribute="bottom" secondItem="3nE-VN-cW5" secondAttribute="bottom" id="7aQ-sW-7fb"/>
+                            <constraint firstItem="3nE-VN-cW5" firstAttribute="top" secondItem="30z-ND-ftm" secondAttribute="top" id="EJw-Qb-2ZP"/>
+                            <constraint firstItem="30z-ND-ftm" firstAttribute="trailing" secondItem="3nE-VN-cW5" secondAttribute="trailing" id="dKk-YG-Ft4"/>
+                            <constraint firstItem="3nE-VN-cW5" firstAttribute="leading" secondItem="30z-ND-ftm" secondAttribute="leading" id="yIp-pt-CPw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="test" image="dice.fill" catalog="system" id="kHF-FB-gQO">
+                        <inset key="landscapeImageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <imageReference key="selectedImage" image="dice.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonCounter" destination="T77-tD-P9l" id="pGy-zZ-tys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGJ-th-Z2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="658"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow_forward" width="44" height="74"/>
@@ -606,7 +699,7 @@
         <image name="settings" width="118" height="118"/>
         <image name="theme" width="72" height="72"/>
         <namedColor name="AccentColor">
-            <color red="0.83137254901960778" green="0.23921568627450979" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83099997043609619" green="0.23899999260902405" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background">
             <color red="0.98000001907348633" green="0.96899998188018799" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -615,7 +708,7 @@
             <color red="0.89800000190734863" green="0.72200000286102295" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brightRed">
-            <color red="0.83137254901960778" green="0.23921568627450979" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83099997043609619" green="0.23899999260902405" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brown">
             <color red="0.23899999260902405" green="0.13300000131130219" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
