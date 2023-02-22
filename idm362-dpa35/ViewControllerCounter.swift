@@ -9,21 +9,41 @@ import UIKit
 
 class ViewControllerCounter: UIViewController {
 
-    @IBOutlet weak var buttonCounter: UIButton!
+
+    @IBOutlet weak var topRightLabel: UILabel!
+    @IBOutlet weak var bottomLeftLabel: UILabel!
+    @IBOutlet weak var bottomRightLabel: UILabel!
+    @IBOutlet weak var topLeftLabel: UILabel!
+    
+    //global vars
+    
+    //top left
+    var topLeft:Int = 40
+    //bottom left
+    var bottomLeft:Int = 40
+    //top right
+    var topRigtht:Int = 40
+    //bottom right
+    var bottomRigtht:Int = 40
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func testButton(_ sender: Any) {
-        print("left test");
+    
+    @IBAction func decreaseLife(_ sender: Any) {
+        topLeft = topLeft-1
+        topLeftLabel.text = String(topLeft)
     }
     
-    @IBAction func testButtonRight(_ sender: Any) {
-        print("right test");
+    @IBAction func increaseLife(_ sender: Any) {
+        topLeft = topLeft+1
+        topLeftLabel.text = String(topLeft)
     }
+    
     /*
     // MARK: - Navigation
 

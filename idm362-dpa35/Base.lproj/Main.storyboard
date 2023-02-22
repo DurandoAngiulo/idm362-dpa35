@@ -431,9 +431,6 @@
                                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
                                                     <color key="baseBackgroundColor" name="bage"/>
                                                 </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="addBtn:" destination="ilo-Nu-JEB" eventType="touchUpInside" id="E4Z-Vh-ejw"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqt-Rg-Frm">
                                                 <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="351"/>
@@ -490,9 +487,6 @@
                         <imageReference key="selectedImage" image="dice.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="buttonCounter" destination="A73-4H-Vk0" id="ilM-dA-yeX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0B-SO-84k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,16 +612,29 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1WT-jU-Zok" userLabel="topLeft">
                                                 <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="421"/>
                                                 <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhW-3W-Qc7" userLabel="Top Left Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="421"/>
+                                                        <color key="backgroundColor" name="bage"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                                        <color key="textColor" name="Background"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KUh-WC-GpA">
                                                         <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="421"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shx-cw-ZoP">
                                                                 <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="421"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="decreaseLife:" destination="Nzr-6x-bLE" eventType="touchUpInside" id="ci6-Nh-UkS"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ck-5D-ic7">
                                                                 <rect key="frame" x="95.666666666666686" y="0.0" width="96" height="421"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="increaseLife:" destination="Nzr-6x-bLE" eventType="touchUpInside" id="FtL-mL-8gn"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -639,13 +646,6 @@
                                                             <constraint firstItem="Shx-cw-ZoP" firstAttribute="top" secondItem="KUh-WC-GpA" secondAttribute="top" id="wUB-dm-Lgy"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhW-3W-Qc7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="421"/>
-                                                        <color key="backgroundColor" name="bage"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
-                                                        <color key="textColor" name="Background"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -823,6 +823,12 @@
                         <imageReference key="selectedImage" image="dice.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomLeftLabel" destination="m7O-E0-uYy" id="exA-ve-q0z"/>
+                        <outlet property="bottomRightLabel" destination="s0y-mu-o1v" id="2Ku-ZY-Min"/>
+                        <outlet property="topLeftLabel" destination="VhW-3W-Qc7" id="WhR-Z1-q9h"/>
+                        <outlet property="topRightLabel" destination="YTj-8W-Zu8" id="2k6-bw-VYH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGJ-th-Z2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
