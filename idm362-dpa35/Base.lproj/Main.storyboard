@@ -6,7 +6,6 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -207,7 +206,6 @@
                         <segue destination="FHC-BL-XHz" kind="relationship" relationship="viewControllers" id="sEj-7K-kvY"/>
                         <segue destination="7af-Ep-HMe" kind="relationship" relationship="viewControllers" id="0yj-Ic-WQv"/>
                         <segue destination="eLj-4f-Mtc" kind="relationship" relationship="viewControllers" id="Rog-Cy-Rzq"/>
-                        <segue destination="ilo-Nu-JEB" kind="relationship" relationship="viewControllers" id="kQK-eL-L1n"/>
                         <segue destination="xIP-BZ-nBl" kind="relationship" relationship="viewControllers" id="pP8-hb-jwN"/>
                         <segue destination="Nzr-6x-bLE" kind="relationship" relationship="viewControllers" id="qMB-Ud-st6"/>
                     </connections>
@@ -410,88 +408,6 @@
             </objects>
             <point key="canvasLocation" x="-929.00763358778624" y="-40.140845070422536"/>
         </scene>
-        <!--main-->
-        <scene sceneID="FV7-8u-7ln">
-            <objects>
-                <viewController id="ilo-Nu-JEB" customClass="ViewControllerCounter" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lf3-2d-1g5">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4aK-LC-owv" userLabel="topdown">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-Tp-qy7" userLabel="leftRightTop">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="351"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A73-4H-Vk0">
-                                                <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="351"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="40">
-                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
-                                                    <color key="baseBackgroundColor" name="bage"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqt-Rg-Frm">
-                                                <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="351"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="40">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
-                                                    <color key="baseBackgroundColor" name="brightRed"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Rqt-Rg-Frm" firstAttribute="height" secondItem="tvQ-Tp-qy7" secondAttribute="height" id="3cx-By-dwJ"/>
-                                            <constraint firstItem="A73-4H-Vk0" firstAttribute="height" secondItem="tvQ-Tp-qy7" secondAttribute="height" id="hrr-rs-cZs"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nlc-df-Oc9" userLabel="leftRightBottom">
-                                        <rect key="frame" x="0.0" y="359" width="393" height="351"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnr-Vp-rDw">
-                                                <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="351"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="40">
-                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
-                                                    <color key="baseBackgroundColor" name="red brown"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWc-Z8-ila">
-                                                <rect key="frame" x="201.66666666666663" y="0.0" width="191.33333333333337" height="351"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="40">
-                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
-                                                    <color key="baseBackgroundColor" name="light orange"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Nlc-df-Oc9" firstAttribute="height" secondItem="tvQ-Tp-qy7" secondAttribute="height" id="zhh-Tk-d6B"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="tLx-xR-liD"/>
-                        <color key="backgroundColor" name="Background"/>
-                        <constraints>
-                            <constraint firstItem="4aK-LC-owv" firstAttribute="top" secondItem="tLx-xR-liD" secondAttribute="top" id="D3R-vI-x1X"/>
-                            <constraint firstItem="tLx-xR-liD" firstAttribute="trailing" secondItem="4aK-LC-owv" secondAttribute="trailing" id="Rtg-j3-wH6"/>
-                            <constraint firstItem="tLx-xR-liD" firstAttribute="bottom" secondItem="4aK-LC-owv" secondAttribute="bottom" id="YNm-qI-OG4"/>
-                            <constraint firstItem="4aK-LC-owv" firstAttribute="leading" secondItem="tLx-xR-liD" secondAttribute="leading" id="iDp-x5-Fbf"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="main" image="dice.fill" catalog="system" id="Tck-IG-AYT">
-                        <inset key="landscapeImageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <imageReference key="selectedImage" image="dice.fill" catalog="system" symbolScale="default"/>
-                    </tabBarItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o0B-SO-84k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="637" y="-40"/>
-        </scene>
         <!--player count-->
         <scene sceneID="vhL-rA-CbI">
             <objects>
@@ -595,7 +511,7 @@
             </objects>
             <point key="canvasLocation" x="-155" y="-40"/>
         </scene>
-        <!--test-->
+        <!--main-->
         <scene sceneID="tv6-wV-D1r">
             <objects>
                 <viewController id="Nzr-6x-bLE" customClass="ViewControllerCounter" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
@@ -818,7 +734,7 @@
                             <constraint firstItem="DIn-vA-eOQ" firstAttribute="top" secondItem="177-D1-sug" secondAttribute="top" id="nwY-qd-Zet"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="test" image="dice.fill" catalog="system" id="kHF-FB-gQO">
+                    <tabBarItem key="tabBarItem" title="main" image="dice.fill" catalog="system" id="kHF-FB-gQO">
                         <inset key="landscapeImageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <imageReference key="selectedImage" image="dice.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
@@ -832,7 +748,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGJ-th-Z2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606.87022900763361" y="657.04225352112678"/>
+            <point key="canvasLocation" x="647" y="-27"/>
         </scene>
     </scenes>
     <resources>
