@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="xIP-BZ-nBl" customClass="ViewController" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WO2-MO-HXj">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7p-p2-09D">
@@ -743,6 +743,20 @@
                                     <constraint firstItem="0la-gp-gHa" firstAttribute="height" secondItem="N0P-HG-FIg" secondAttribute="height" id="EP4-66-JbR"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmB-6H-bck">
+                                <rect key="frame" x="149.66666666666666" y="391" width="94" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="80W-4Y-yxV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="djG-DT-nbW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="settings-button" imagePadding="0.0">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xIP-BZ-nBl" kind="presentation" id="meY-Nz-LQW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="30z-ND-ftm"/>
                         <color key="backgroundColor" name="Background"/>
@@ -750,7 +764,9 @@
                             <constraint firstItem="DIn-vA-eOQ" firstAttribute="bottom" secondItem="177-D1-sug" secondAttribute="bottom" id="301-7k-vAX"/>
                             <constraint firstItem="DIn-vA-eOQ" firstAttribute="trailing" secondItem="177-D1-sug" secondAttribute="trailing" id="Ag9-wg-GdQ"/>
                             <constraint firstItem="DIn-vA-eOQ" firstAttribute="leading" secondItem="177-D1-sug" secondAttribute="leading" id="anG-z1-zDi"/>
+                            <constraint firstItem="kmB-6H-bck" firstAttribute="centerY" secondItem="177-D1-sug" secondAttribute="centerY" id="n8b-ro-IK6"/>
                             <constraint firstItem="DIn-vA-eOQ" firstAttribute="top" secondItem="177-D1-sug" secondAttribute="top" id="nwY-qd-Zet"/>
+                            <constraint firstItem="kmB-6H-bck" firstAttribute="centerX" secondItem="177-D1-sug" secondAttribute="centerX" id="pUj-87-7ND"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="main" image="dice.fill" catalog="system" id="kHF-FB-gQO">
@@ -767,9 +783,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGJ-th-Z2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647" y="-27"/>
+            <point key="canvasLocation" x="646.56488549618314" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="meY-Nz-LQW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow_forward" width="44" height="74"/>
         <image name="dice" width="115" height="115"/>
@@ -780,6 +799,7 @@
         <image name="point" width="92" height="104"/>
         <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="80"/>
         <image name="settings" width="118" height="118"/>
+        <image name="settings-button" width="70" height="70"/>
         <image name="theme" width="72" height="72"/>
         <namedColor name="AccentColor">
             <color red="0.83099997043609619" green="0.23899999260902405" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
