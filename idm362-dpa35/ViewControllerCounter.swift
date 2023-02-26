@@ -44,6 +44,14 @@ class ViewControllerCounter: UIViewController {
         topLeftLabel.text = String(topLeft)
     }
     
+    func calculateLife(playerNum: Int, lifeCounter: Int){
+
+            //if playernum = 1. then refernce topLeft
+
+            print("calculate life called")
+
+        }
+    
     /*
     // MARK: - Navigation
 
