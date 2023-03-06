@@ -15,6 +15,8 @@ class ViewControllerCounter: UIViewController {
     @IBOutlet weak var bottomRightLabel: UILabel!
     @IBOutlet weak var topLeftLabel: UILabel!
     
+    
+    
     //global vars
     
     //top left
@@ -29,6 +31,10 @@ class ViewControllerCounter: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        topLeftLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        topRightLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+        bottomLeftLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        bottomRightLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         
         // Do any additional setup after loading the view.
     }
