@@ -13,13 +13,13 @@
         <!--Settings -->
         <scene sceneID="zwP-9c-Bsk">
             <objects>
-                <viewController id="xIP-BZ-nBl" customClass="ViewController" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="xIP-BZ-nBl" customClass="ViewController" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WO2-MO-HXj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7p-p2-09D">
-                                <rect key="frame" x="154.66666666666666" y="103" width="83.666666666666657" height="43"/>
+                                <rect key="frame" x="154.66666666666666" y="59" width="83.666666666666657" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="aZB-Od-1E9"/>
                                 </constraints>
@@ -28,13 +28,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GENERAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3w-r0-pp6">
-                                <rect key="frame" x="45" y="185" width="52.666666666666657" height="15.666666666666657"/>
+                                <rect key="frame" x="45" y="141" width="52.666666666666657" height="15.666666666666657"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
                                 <color key="textColor" name="brown"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Cqt-DI-Xob">
-                                <rect key="frame" x="45" y="222.66666666666666" width="120" height="25"/>
+                                <rect key="frame" x="45" y="178.66666666666666" width="120" height="25"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="theme" translatesAutoresizingMaskIntoConstraints="NO" id="irg-RP-H7w">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -56,12 +56,12 @@
                                 </constraints>
                             </stackView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-wX-eLP">
-                                <rect key="frame" x="299" y="220.66666666666666" width="51" height="29.333333333333343"/>
+                                <rect key="frame" x="299" y="176.66666666666666" width="51" height="29.333333333333343"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <color key="onTintColor" name="brightRed"/>
                             </switch>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Afn-Dt-okK">
-                                <rect key="frame" x="45" y="277.66666666666669" width="120" height="25"/>
+                                <rect key="frame" x="45" y="233.66666666666666" width="120" height="24.999999999999972"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-S8-Ugp">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -83,7 +83,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow_forward" translatesAutoresizingMaskIntoConstraints="NO" id="nxT-mx-EVy">
-                                <rect key="frame" x="320" y="276.33333333333331" width="28" height="28"/>
+                                <rect key="frame" x="320" y="232.33333333333334" width="28" height="28.000000000000028"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="Iml-KE-soz"/>
                                     <constraint firstAttribute="height" constant="28" id="erp-JH-1OR"/>
@@ -91,7 +91,7 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="small"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bRH-iK-TsL">
-                                <rect key="frame" x="45" y="331" width="180" height="25"/>
+                                <rect key="frame" x="45" y="287" width="180" height="25"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="point" translatesAutoresizingMaskIntoConstraints="NO" id="zKx-UE-Hkt">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -113,7 +113,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow_forward" translatesAutoresizingMaskIntoConstraints="NO" id="win-Oo-I8J">
-                                <rect key="frame" x="320" y="329.66666666666669" width="28" height="28"/>
+                                <rect key="frame" x="320" y="285.66666666666669" width="28" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="296-p5-5sc"/>
                                     <constraint firstAttribute="width" constant="28" id="TrT-FN-VN4"/>
@@ -121,7 +121,7 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="small"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wO1-f4-Ck8">
-                                <rect key="frame" x="96.666666666666686" y="406" width="200" height="51"/>
+                                <rect key="frame" x="96.666666666666686" y="362" width="200" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="6wg-Po-NC8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="YpQ-Bf-rlL"/>
@@ -138,7 +138,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3J-Oi-zMG">
-                                <rect key="frame" x="96.666666666666686" y="485" width="200" height="51"/>
+                                <rect key="frame" x="96.666666666666686" y="441" width="200" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="2Ph-AZ-jUs"/>
                                     <constraint firstAttribute="height" constant="51" id="nWA-I5-0dq"/>
@@ -191,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uty-5i-YsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2399.2366412213742" y="-40.140845070422536"/>
+            <point key="canvasLocation" x="1541" y="-40"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fPM-qA-IAP">
@@ -286,7 +286,7 @@
         <!--life Count-->
         <scene sceneID="LSr-fK-W0B">
             <objects>
-                <viewController id="7af-Ep-HMe" sceneMemberID="viewController">
+                <viewController id="7af-Ep-HMe" customClass="ViewControllerLifePage" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yr1-5y-sPO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,7 +320,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="eLj-4f-Mtc" kind="show" id="nLR-RJ-QfS"/>
+                                            <action selector="assigntwentyLife:" destination="7af-Ep-HMe" eventType="touchUpInside" id="aPj-Fv-rgI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agh-LO-gD3">
@@ -340,7 +340,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="eLj-4f-Mtc" kind="show" id="5KJ-Ln-IHQ"/>
+                                            <action selector="assignfortyLife:" destination="7af-Ep-HMe" eventType="touchUpInside" id="O2w-ml-xYR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNh-sr-ZhI">
@@ -360,7 +360,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="eLj-4f-Mtc" kind="show" id="dIr-Sq-kj5"/>
+                                            <action selector="assignsixtyLife:" destination="7af-Ep-HMe" eventType="touchUpInside" id="bnq-DT-hUQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -382,118 +382,18 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="rEA-Fu-jrR"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Nzr-6x-bLE" kind="showDetail" identifier="gameSegue" id="xYC-DC-5Lf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l14-RI-jW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2.2900763358778624" y="-40.140845070422536"/>
         </scene>
-        <!--player count-->
-        <scene sceneID="vhL-rA-CbI">
-            <objects>
-                <viewController id="eLj-4f-Mtc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ezW-Qq-0IR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Player Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVP-Tv-zhX">
-                                <rect key="frame" x="56.333333333333343" y="343" width="280.66666666666663" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="jAm-Lx-RcK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="30"/>
-                                <color key="textColor" name="brown"/>
-                                <color key="highlightedColor" name="brown"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="3YQ-tr-iOG">
-                                <rect key="frame" x="61" y="403" width="271" height="75"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psX-GY-86h">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="6Gc-y1-lL0"/>
-                                            <constraint firstAttribute="height" constant="75" id="Lob-xq-Hyw"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="2">
-                                            <backgroundConfiguration key="background" cornerRadius="12">
-                                                <color key="backgroundColor" name="brightRed"/>
-                                                <color key="strokeColor" white="0.18043334959999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="32"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="erW-fN-Ek8" kind="show" id="IgQ-bb-2cU"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njd-bC-WV3">
-                                        <rect key="frame" x="98" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="ip7-9A-LWr"/>
-                                            <constraint firstAttribute="height" constant="75" id="kMy-rA-hKt"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="3">
-                                            <backgroundConfiguration key="background" cornerRadius="12">
-                                                <color key="backgroundColor" name="brightRed"/>
-                                                <color key="strokeColor" white="0.18043334959999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="32"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="75S-D6-Dnh" kind="show" id="jt0-S8-UFe"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdX-bI-e62">
-                                        <rect key="frame" x="196" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="mks-L1-rO1"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="sos-am-l6x"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="4">
-                                            <backgroundConfiguration key="background" cornerRadius="12">
-                                                <color key="backgroundColor" name="brightRed"/>
-                                                <color key="strokeColor" white="0.18043334959999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="32"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="Nzr-6x-bLE" kind="show" id="VzZ-PC-wLQ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="pka-Iy-BlK"/>
-                        <color key="backgroundColor" name="Background"/>
-                        <constraints>
-                            <constraint firstItem="3YQ-tr-iOG" firstAttribute="top" secondItem="dVP-Tv-zhX" secondAttribute="bottom" constant="15" id="Ym0-d3-isj"/>
-                            <constraint firstItem="dVP-Tv-zhX" firstAttribute="top" secondItem="pka-Iy-BlK" secondAttribute="top" constant="240" id="bzb-Em-nyu"/>
-                            <constraint firstItem="3YQ-tr-iOG" firstAttribute="centerX" secondItem="dVP-Tv-zhX" secondAttribute="centerX" id="rEp-NT-axL"/>
-                            <constraint firstItem="dVP-Tv-zhX" firstAttribute="centerX" secondItem="ezW-Qq-0IR" secondAttribute="centerX" id="zbf-7O-arI"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="player count" image="person.fill" catalog="system" id="X7t-DE-J2X">
-                        <inset key="landscapeImageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="default"/>
-                    </tabBarItem>
-                    <navigationItem key="navigationItem" id="y1E-Fk-JHD"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lfT-fo-15M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="770.2290076335878" y="-40.140845070422536"/>
-        </scene>
         <!--main-->
         <scene sceneID="tv6-wV-D1r">
             <objects>
-                <viewController id="Nzr-6x-bLE" customClass="ViewControllerCounter" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Nzr-6x-bLE" customClass="ViewControllerCounter" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="177-D1-sug">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,7 +409,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6d-yI-f75" userLabel="background">
                                                         <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="421"/>
-                                                        <color key="backgroundColor" name="bage"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
                                                         <color key="textColor" name="Background"/>
                                                         <nil key="highlightedColor"/>
@@ -570,7 +470,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DA-Wn-0aQ" userLabel="background">
                                                         <rect key="frame" x="0.0" y="0.0" width="191.33333333333334" height="421"/>
-                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <color key="backgroundColor" name="bage"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
                                                         <color key="textColor" name="Background"/>
                                                         <nil key="highlightedColor"/>
@@ -774,7 +674,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="xIP-BZ-nBl" kind="show" id="tph-6G-rKY"/>
+                                    <segue destination="xIP-BZ-nBl" kind="showDetail" id="82N-p8-WAn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -804,7 +704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGJ-th-Z2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="656" y="744"/>
+            <point key="canvasLocation" x="755" y="-40"/>
         </scene>
         <!--3 players-->
         <scene sceneID="1yh-DL-b6B">
@@ -1022,9 +922,6 @@
                                 <buttonConfiguration key="configuration" style="plain" image="settings-button" imagePadding="0.0">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="xIP-BZ-nBl" kind="show" id="wEy-JP-HUT"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ENO-Wm-Gjw"/>
@@ -1052,7 +949,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDf-k7-NJO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1582.4427480916029" y="-40.140845070422536"/>
+            <point key="canvasLocation" x="1447" y="-837"/>
         </scene>
         <!--2 players-->
         <scene sceneID="lRs-bA-R4E">
@@ -1201,9 +1098,6 @@
                                 <buttonConfiguration key="configuration" style="plain" image="settings-button" imagePadding="0.0">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="xIP-BZ-nBl" kind="show" id="Vxe-Cd-bEp"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MLs-cn-Dir"/>
@@ -1255,17 +1149,12 @@
             <point key="canvasLocation" x="-1707.6335877862596" y="-40.140845070422536"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="5KJ-Ln-IHQ"/>
-        <segue reference="tph-6G-rKY"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow_forward" width="44" height="74"/>
         <image name="dice" width="115" height="115"/>
         <image name="dice.fill" catalog="system" width="128" height="116"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="point" width="92" height="104"/>
         <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="80"/>
         <image name="settings" width="118" height="118"/>
