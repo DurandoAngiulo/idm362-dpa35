@@ -24,6 +24,9 @@ class ViewControllerCounterThree: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        topLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        bottomLeftLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        bottomRightLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
 
         // Do any additional setup after loading the view.
     }

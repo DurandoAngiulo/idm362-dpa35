@@ -20,6 +20,7 @@ class ViewControllerCounterTwo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        topLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
 
         // Do any additional setup after loading the view.
     }
