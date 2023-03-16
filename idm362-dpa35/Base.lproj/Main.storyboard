@@ -13,7 +13,7 @@
         <!--Settings -->
         <scene sceneID="zwP-9c-Bsk">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xIP-BZ-nBl" customClass="ViewController" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="setting" modalPresentationStyle="fullScreen" id="xIP-BZ-nBl" customClass="ViewController" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WO2-MO-HXj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="returnToHome:" destination="xIP-BZ-nBl" eventType="touchUpInside" id="E1T-DF-nwY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3nN-c5-3C4"/>
@@ -193,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="1541" y="-40"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="fPM-qA-IAP">
             <objects>
-                <viewController id="FHC-BL-XHz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" modalPresentationStyle="fullScreen" id="FHC-BL-XHz" customClass="HomeViewController" customModule="idm362_dpa35" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7L-X7-7DS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

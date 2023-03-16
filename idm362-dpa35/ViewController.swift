@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func returnToHome(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "home") as! HomeViewController
+               self.present(vc, animated: false)
+    }
+    
 }
 
