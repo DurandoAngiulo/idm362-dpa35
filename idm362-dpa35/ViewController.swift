@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func returnToHome(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "home") as! HomeViewController
-               self.present(vc, animated: false)
+       print("success")
+        performSegue(withIdentifier: "returnToHome", sender: nil)
     }
     
 }

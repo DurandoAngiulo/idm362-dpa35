@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB1F9CA2299556FB00C2482A /* ViewControllerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F9CA1299556FB00C2482A /* ViewControllerCounter.swift */; };
 		DB39A5E429C34D11002FF674 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39A5E329C34D11002FF674 /* HomeViewController.swift */; };
+		DB39A5E629C36EA6002FF674 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = DB39A5E529C36EA6002FF674 /* sounds */; };
 		DB9F111D2979987900AD0C97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F111C2979987900AD0C97 /* AppDelegate.swift */; };
 		DB9F111F2979987900AD0C97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F111E2979987900AD0C97 /* SceneDelegate.swift */; };
 		DB9F11212979987900AD0C97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F11202979987900AD0C97 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		DB1F9CA1299556FB00C2482A /* ViewControllerCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCounter.swift; sourceTree = "<group>"; };
 		DB39A5E329C34D11002FF674 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB39A5E529C36EA6002FF674 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
 		DB9F11192979987900AD0C97 /* idm362-dpa35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-dpa35.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9F111C2979987900AD0C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB9F111E2979987900AD0C97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				DBE4817229B4FAB200C20915 /* ViewControllerCounterThree.swift */,
 				DB9F111C2979987900AD0C97 /* AppDelegate.swift */,
 				DB9F111E2979987900AD0C97 /* SceneDelegate.swift */,
+				DB39A5E529C36EA6002FF674 /* sounds */,
 				DB9F11202979987900AD0C97 /* ViewController.swift */,
 				DB9F11222979987900AD0C97 /* Main.storyboard */,
 				DB39A5E329C34D11002FF674 /* HomeViewController.swift */,
@@ -248,6 +251,7 @@
 			files = (
 				DB9F11292979987B00AD0C97 /* LaunchScreen.storyboard in Resources */,
 				DB9F11262979987B00AD0C97 /* Assets.xcassets in Resources */,
+				DB39A5E629C36EA6002FF674 /* sounds in Resources */,
 				DB9F11242979987900AD0C97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
